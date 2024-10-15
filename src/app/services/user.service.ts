@@ -8,7 +8,7 @@ export class UserService {
   private loggedInUserKey = 'loggedInUser';
   location: any;
 
-  constructor() {}
+  constructor(private userService: UserService) {}
 
   createUser(email: string, password: string): boolean {
     const users = this.getUsers();
@@ -52,6 +52,7 @@ export class UserService {
   }
 
   logoutUser(): void {
+    console.log('UserService: logging out...'); // Debug message
     localStorage.removeItem(this.loggedInUserKey);
   }
 
