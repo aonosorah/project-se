@@ -1,7 +1,8 @@
 Projeto S.E.
- 
+
 Descrição
-Este é um projeto Angular desenvolvido para avaliação. O objetivo deste aplicativo é permitir que o usuário faça cadastro, login, veja livros de indicação disponíveis, salvando informações localmente.
+ - Este é um projeto Angular desenvolvido para avaliação. O objetivo deste aplicativo é permitir que o usuário faça cadastro, login, veja livros de indicação disponíveis, salvando informações localmente.
+Na criação de IDs nos elementos HTML, foi considerada a facilitação de testes automáticos, utilizando uma estratégia consistente e padronizada. Além disso, o projeto adota uma arquitetura baseada em componentes, onde cada parte da interface (como o formulário de login e a lista de livros) é modular e reutilizável. Isso facilita a manutenção e evolução do código no futuro. O gerenciamento de autenticação é feito localmente utilizando o localStorage, permitindo que o usuário permaneça logado mesmo após atualizar a página.
 
 Pré-requisitos
  - Node.js: versão 16 ou superior.
