@@ -55,4 +55,8 @@ export class UserComponent {
     this.userService.logoutUser();
     this.router.navigate(['/login']);
   }
+
+  goBack(): void {
+    this.router.navigate(['']);
+  }
 }
