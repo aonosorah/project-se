@@ -1,27 +1,43 @@
-# ProjectSe
+Projeto S.E.
+ 
+Descrição
+Este é um projeto Angular desenvolvido para avaliação. O objetivo deste aplicativo é permitir que o usuário faça cadastro, login, veja livros de indicação disponíveis, salvando informações localmente.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+Pré-requisitos
+ - Node.js: versão 16 ou superior.
+ - Angular CLI: versão 18.2.8 ou superior. 
 
-## Development server
+Para iniciar o projeto localmente
+```
+npm install -g @angular/cli
+```
+Como executar o projeto
+  1. Clone o repositório
+```
+git clone https://github.com/your-username/project-se.git
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  2. Instalar as dependências
+```
+cd project-se
+```
+```
+npm install
+```
+  3. Para rodar localmente
+```
+ng serve
+```
+ - Por padrão, o projeto estará disponível em http://localhost:4200.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+Tecnologias Utilizadas
+ - Angular: ^18.2.0
+ - TypeScript: ~5.5.2
+ - Karma e Jasmine para testes unitários
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[Projeto Hospedado em Vercel](https://project-se-three.vercel.app/dashboard)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Contato
+Caso tenha dúvidas, sugestões ou problemas, sinta-se à vontade para entrar em contato pelo [e-mail](imabbell@gmail.com) ou abrir uma issue no repositório.
