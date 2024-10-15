@@ -1,5 +1,5 @@
 <div class="book-list-container">
-  <!-- Book List Display -->
+
   <div class="book-container" *ngIf="books && books.length > 0; else noBooks">
     <div *ngFor="let book of books" class="book-item">
       <img class="img" [src]="book.coverImage" alt="{{ book.title }} cover" />
@@ -10,12 +10,12 @@
   </div>
   
 
-  <!-- No books available message -->
+
   <ng-template #noBooks>
     <p>No books available.</p>
   </ng-template>
 
-  <!-- Add New Book Form -->
+ 
   <form class="form" [formGroup]="bookForm" (ngSubmit)="addBook()">
     <label for="title">Titulo:</label>
     <input   class="input" id="title" formControlName="title" placeholder="Titulo" />

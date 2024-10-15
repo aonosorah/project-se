@@ -64,6 +64,7 @@ export class BookListngComponent implements OnInit {
   }
 
   logout(): void {
+    console.log('Logout button clicked'); // Debug message
     this.userService.logoutUser();
     this.router.navigate(['/login']);
   }
