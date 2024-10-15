@@ -1,41 +1,42 @@
 <div class="login-container">
   
     <h2 class="p">Login</h2>
-  
-    <!-- Display error message if login fails -->
+
     <div *ngIf="errorMessage" class="error-message">
       {{ errorMessage }}
     </div>
   
-    <!-- Login Form -->
+
     <form [formGroup]="loginForm" (ngSubmit)="login()">
   
-      <!-- Email Field -->
+     
       <div>
         <label for="email" class="p">Email</label>
         <input id="email" type="email" class="p" formControlName="email" placeholder="Enter your email">
         
-        <!-- Validation Message -->
+    
         <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched">
           <small *ngIf="loginForm.controls['email'].errors?.['required']">Email is required.</small>
           <small *ngIf="loginForm.controls['email'].errors?.['email']">Please enter a valid email.</small>
         </div>
       </div>
   
-      <!-- Password Field -->
+  
       <div>
         <label for="password" class="p">Password</label>
         <input class="p" id="password" type="password" formControlName="password" placeholder="Enter your password">
         
-        <!-- Validation Message -->
+       
         <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
           <small *ngIf="loginForm.controls['password'].errors?.['required']">Password is required.</small>
         </div>
       </div>
   
-      <!-- Submit Button -->
+    
       <div>
-        <button type="submit" class="p" [disabled]="loginForm.invalid">Login</button>
+   
+        <button class="btn" (click)="goBack()">Voltar</button>
+        <button type="submit" class="btn" [disabled]="loginForm.invalid">Login</button>
       </div>
     </form>
   </div>

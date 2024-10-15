@@ -54,17 +54,27 @@ input.p {
   transition: border-color 0.3s;
 }
 
+button {
+  padding: 0.75rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 input.p:focus {
   outline: none;
   border-color: #3498db;
 }
 
-button.p {
+button {
   padding: 0.75rem;
+  margin: 10px;
   border: none;
   background-color: #3498db;
   color: white;
-  border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -78,7 +88,6 @@ button.p:not(:disabled):hover {
   background-color: #2980b9;
 }
 
-/* Error Message Styling */
 .error-message {
   color: #e74c3c;
   margin-bottom: 1rem;

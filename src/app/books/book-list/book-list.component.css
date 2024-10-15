@@ -18,6 +18,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.add {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: rgb(19, 20, 27);
+  border: none;
+  cursor: pointer;
+}
 .img {
   height: 200px;
   width: 150px;
@@ -33,23 +40,21 @@ h3 {
 
 p {
   font-size: 14px;
-  margin: 5px 0; /* Small margin between author and delete button */
+  margin: 5px 0;
   text-align: center;
-  color: #555; /* Slightly muted color for the author's name */
+  color: #100e0e;
 }
 
 button {
-  margin-top: 10px; /* Space between author's name and button */
+  margin-top: 10px;
   padding: 5px 10px;
-  background-color: #ff4d4d; /* Red color for delete */
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ff1a1a; /* Darker red on hover */
+  background-color: #ff1a1a;
 }
 
 .form {
