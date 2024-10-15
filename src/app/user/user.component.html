@@ -1,0 +1,52 @@
+<div class="create-account-container">
+    <h2 class="p">Create Account</h2>
+  
+    <!-- Display error message if account creation fails -->
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+  
+    <!-- Create Account Form -->
+    <form [formGroup]="createAccountForm" (ngSubmit)="createAccount()">
+      <!-- Email Field -->
+      <div>
+        <label for="email" class="p">Email</label>
+        <input id="email" type="email" class="p" formControlName="email" placeholder="Enter your email">
+        
+        <!-- Validation Message -->
+        <div *ngIf="createAccountForm.controls['email'].invalid && createAccountForm.controls['email'].touched">
+          <small *ngIf="createAccountForm.controls['email'].errors?.['required']">Email is required.</small>
+          <small *ngIf="createAccountForm.controls['email'].errors?.['email']">Please enter a valid email.</small>
+        </div>
+      </div>
+  
+      <!-- Password Field -->
+      <div>
+        <label for="password" class="p">Password</label>
+        <input id="password" type="password" class="p" formControlName="password" placeholder="Enter your password">
+        
+        <!-- Validation Message -->
+        <div *ngIf="createAccountForm.controls['password'].invalid && createAccountForm.controls['password'].touched">
+          <small *ngIf="createAccountForm.controls['password'].errors?.['required']">Password is required.</small>
+          <small *ngIf="createAccountForm.controls['password'].errors?.['minlength']">Password must be at least 6 characters long.</small>
+        </div>
+      </div>
+  
+      <!-- Confirm Password Field -->
+      <div>
+        <label for="confirmPassword" class="p">Confirm Password</label>
+        <input id="confirmPassword" type="password" class="p" formControlName="confirmPassword" placeholder="Confirm your password">
+        
+        <!-- Validation Message -->
+        <div *ngIf="createAccountForm.hasError('mismatch') && createAccountForm.controls['confirmPassword'].touched">
+          <small class="password-mismatch">Passwords do not match.</small>
+        </div>
+      </div>
+  
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" class="p" [disabled]="createAccountForm.invalid">Create Account</button>
+      </div>
+    </form>
+  </div>
+  

@@ -1,0 +1,40 @@
+<div class="book-list-container">
+  <!-- Book List Display -->
+  <div class="book-container" *ngIf="books && books.length > 0; else noBooks">
+    <div *ngFor="let book of books" class="book-item">
+      <img class="img" [src]="book.coverImage" alt="{{ book.title }} cover" />
+      <h3>{{ book.title }}</h3>
+      <p>{{ book.author }}</p>
+      <button (click)="deleteBook(book.id)">Delete</button>
+    </div>
+  </div>
+  
+
+  <!-- No books available message -->
+  <ng-template #noBooks>
+    <p>No books available.</p>
+  </ng-template>
+
+  <!-- Add New Book Form -->
+  <form class="form" [formGroup]="bookForm" (ngSubmit)="addBook()">
+    <label for="title">Titulo:</label>
+    <input   class="input" id="title" formControlName="title" placeholder="Titulo" />
+
+    <label for="author">Autor(a/e):</label>
+    <input   class="input" id="author" formControlName="author" placeholder="Autor(a/e)" />
+
+    <label for="coverImage">Link da Capa</label>
+    <input
+    class="input"
+      id="coverImage"
+      formControlName="coverImage"
+      placeholder="Image URL"
+    />
+
+    <button type="submit" [disabled]="!bookForm.valid">Add Book</button>
+  </form>
+  <div>
+    <button (click)="logout()">Logout</button>
+
+  </div>
+</div>

@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container,
+.create-account-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2.p {
+  margin-bottom: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label.p {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+input.p {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  transition: border-color 0.3s;
+}
+
+input.p:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button.p {
+  padding: 0.75rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.p:disabled {
+  background-color: #ccc;
+}
+
+button.p:not(:disabled):hover {
+  background-color: #2980b9;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+small {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+/* Password mismatch error for Create Account */
+.password-mismatch {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: -1rem;
+  text-align: left;
+}
+
+/* Responsiveness */
+@media (max-width: 500px) {
+  .login-container,
+  .create-account-container {
+    padding: 1.5rem;
+  }
+
+  h2.p {
+    font-size: 1.5rem;
+  }
+
+  button.p {
+    font-size: 0.9rem;
+  }
+}

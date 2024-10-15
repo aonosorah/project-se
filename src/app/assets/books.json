@@ -1,0 +1,68 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "publisher": "Celadon Books",
+      "year": 2019,
+      "coverImage": "https://m.media-amazon.com/images/I/41mLT6GsRbL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Where the Crawdads Sing",
+      "author": "Delia Owens",
+      "publisher": "G.P. Putnam's Sons",
+      "year": 2018,
+      "coverImage": "https://m.media-amazon.com/images/I/81F0NTrPdCL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Educated",
+      "author": "Tara Westover",
+      "publisher": "Random House",
+      "year": 2018,
+      "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8YYdDdIdTOItZjGX8i4JzSIBuPaqcAInZw&s"
+    },
+    {
+      "id": 4,
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "publisher": "Crown Publishing Group",
+      "year": 2018,
+      "coverImage": "https://m.media-amazon.com/images/I/81-6EJJzxvL.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Night Circus",
+      "author": "Erin Morgenstern",
+      "publisher": "Doubleday",
+      "year": 2011,
+      "coverImage": "https://m.media-amazon.com/images/I/61Pqqc4muHL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "publisher": "Scholastic Press",
+      "year": 2008,
+      "coverImage": "https://m.media-amazon.com/images/I/71un2hI4mcL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "1984",
+      "author": "George Orwell",
+      "publisher": "Secker & Warburg",
+      "year": 1949,
+      "coverImage": "https://m.media-amazon.com/images/I/71rpa1-kyvL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "publisher": "Little, Brown and Company",
+      "year": 1951,
+      "coverImage": "https://cdn.britannica.com/94/181394-050-2F76F7EE/Reproduction-cover-edition-The-Catcher-in-the.jpg"
+    }
+  ]
+}
